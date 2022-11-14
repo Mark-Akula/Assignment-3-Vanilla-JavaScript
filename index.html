@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <h1>FreeMovies4U</h1>
+  <label id="select" for="Movies">Choose a Movie:</label>
+  <select name="Movies" id="Movies">
+    <option value="Top Gun: Maverick">Top Gun: Maverick</option>
+    <option value="Star Wars: The Force Awakens">Star Wars: The Force Awakens</option>
+    <option value="Star Wars: Episode III - Revenge of the Sith">Star Wars: Episode III - Revenge of the Sith</option>
+    <option value="Mission: Impossible - Fallout">Mission: Impossible - Fallout</option>
+    <option value="Spider-Man: No Way Home">Spider-Man: No Way Home</option>
+    <option value="Black Panther: Wakanda Forever">Black Panther: Wakanda Forever</option>
+    <option value="Jurassic World Dominion">Jurassic World Dominion</option>
+    <option value="Fast & Furious Presents: Hobbs & Shaw">Fast & Furious Presents: Hobbs & Shaw</option>
+    <option value="Fantastic Beasts: The Secrets of Dumbledore">Fantastic Beasts: The Secrets of Dumbledore</option>
+    <option value="Zack Snyder's Justice League">Zack Snyder's Justice League</option>
+  </select>
+  <button id="button">Get</button>
+  <div id="display" hidden>
+    <table>
+      <tr>
+        <td id="left"><img id="poster"></td>
+        <td id="right">
+          <p id="movieInfo"></p>
+          <p id="synopsisHeading">Synopsis</p>
+          <p id="synopsisDescription"></p>
+          <iframe id="movieTrailer"></iframe>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
